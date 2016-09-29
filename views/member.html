@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Les membres</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://use.fontawesome.com/96b867d284.js"></script>
+  <script src="../js/lib/angular.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="#"><img src="../images/logo_white2.png" alt="logo ignition"></a>
+    </div>
+    <div class="navbar-right">
+      <p>Espace Perso</p>
+    </div>
+  </div>
+  <div class="search-results-container">
+    <aside class="search-facets">
+      <div class="search-input">
+        <div class="facets-header">
+          <div class="facets-icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+            <div class="search-box">
+              <input type="text" name="name" autocomplete="off" placeholder="ssssearch">
+            </div>
+        </div>
+      </div>
+      <div class="facets-group-list">
+        <div class="facets-group un">LOCALISATION</div>
+        <div class="facets-group deux">NOM</div>
+        <div class="facets-group trois">HASHTAGS</div>
+      </div>
+    </aside>
+    <section class="search-results">
+      <div class="cardPage">
+          <a class="card" href="#/profil{{student.id}}" ng-repeat="student in data | filter:searchStudent:q track by $index">
+              <div class="topCard">
+                <div class="studentPic" ng-style="{'background-image':'url(./assets/images/'+student.photo+')'}"></div>
+                  <h3>{{student.nomPrenom}}</h3>
+                  <p> {{student.ville}}</p>
+                  <p>Recherche: <strong>{{student.contrat}}</strong></p>
+              </div>
+              <div class="botCard">
+                  <p>#{{student.specialite1}}</p> <p>#{{student.specialite2}}</p> <p>#{{student.specialite3}}</p>
+              </div>
+          </a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
