@@ -77,6 +77,7 @@
         color: #40475A;
         cursor: pointer;
         transition: 0.1s all;
+        margin-bottom: 40px;
 }
 
 .topCard {
@@ -101,6 +102,21 @@
       justify-content: center;
       align-items: center;
 }
+.memberPic {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(253,92,99,0.8);
+}
+    img {
+        height: 100%;
+        width: auto;
+    }
 
 p {
       padding: 4px;

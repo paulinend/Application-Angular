@@ -1,7 +1,7 @@
 
   <div class="main-member" ng-controller='memberCtrl'>
     <div class="search-results-container" ng-controller="memberCtrl">
-      <h1 style="letter-spacing:5px">Trouver un membre de la communauté {{pageTitle}}</h1>
+      <h1 style="letter-spacing:5px">Trouver un membre de la communauté</h1>
       <div class="search-box">
         <input type="text" name="name" ng-model="searchMember " autocomplete="off"  class="search">
         <input type="submit" value="Search" class="button">
@@ -24,15 +24,17 @@
     </section> -->
     <section class="search-results">
       <div class="cardPage">
-          <a class="card" href="#/profile">
+          <a class="card" href="#/profile" ng-repeat='user in myData'>
               <div class="topCard">
-                <div class="memberPic" ></div>
-                  <h3>{{users.username}}</h3> <p>{{users.gender}}</p>
-                  <p> {{users.city}}</p>
-                  <p>Passion: <strong>{{users.passion}}</strong></p>
+                <div class="memberPic" >
+                  <img src="{{user.picture_url_large}}" alt="">
+                </div>
+                  <h3>{{user.username}}</h3>
+                  <p> {{user.city}}</p>
+                  <p>Position: <strong>{{user.title}}</strong></p>
               </div>
               <div class="botCard">
-                  <p>{{users.key_skills_hashtags}}</p>
+                  <p>{{user.key_skills_hashtags}}</p>
               </div>
           </a>
       </div>
