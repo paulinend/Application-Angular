@@ -6,8 +6,9 @@ myApp.controller('memberCtrl', function($scope,$http){
         console.log("Error");
     })
     $scope.pageTitle ="FUUUUCK";
+    $scope.message = 'Everyone come and see how good I look!';
 });
-
+//
 
 // Nouveau Controller ---> exercice 2
 // myApp.controller('app02',function($scope,$http){

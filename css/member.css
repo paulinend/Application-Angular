@@ -44,54 +44,6 @@
 
 
 
-
-
-/*.search-results-container {
-    position: relative;
-    margin: 40px auto 80px auto;
-    overflow: hidden;
-    max-width: 1250px;
-    min-height: 500px;
-}
-
-.search-facets {
-  float: left;
-  height: 800px;
-
-}
-.facets-header {
-    border-bottom-width: 1px;
-    padding: 0 0 0 40px;
-    margin: 0;
-    background-color: #75bdd1;
-    height: 48px;
-    width: 298px;
-}
-.facets-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 45px;
-  font-size: 20px;
-  text-align: center;
-  line-height: 44px;
-  color: #fff;
-  height: 46px;
-  cursor: pointer;
-}
-
-.search-box {
-  font-weight: 500;
-  font-size: 18px;
-  color: #72797d;
-  margin: 0;
-}
-.search-box input {
-  padding: 10px;
-  padding-right: 90px;
-}
-/*
 /*   CONTAINER CENTRAL SEARCH list des membrs */
 
 .member-list {

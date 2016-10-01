@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{users.username}}</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/profile.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <script src="https://use.fontawesome.com/96b867d284.js"></script>
-  <script src="../js/lib/angular.min.js"></script>
-  <script src="../js/lib/angular-route.min.js"></script>
-  <script src="../js/app/app.js"></script>
-  <script src="../js/controllers/profile.js"></script>
-</head>
-<body>
-  <div class="navbar">
-    <div class="navbar-left">
-      <a href="file:///Users/Ayshoox/Desktop/test-ignition/views/member.html#/"><img src="../images/logo_white2.png" alt="logo ignition"></a>
-    </div>
-    <div class="navbar-right">
-      <p>Espace Perso</p>
-    </div>
-  </div>
-  <div class="user-profile-container">
+<!-- <div class="user-profile-container" ng-controller='profileCtrl'>
     <div class="user-profile">
       <div class="top-part" ng-style="{'background-image':'url(./assets/images/'+student.photo+')'}">
         <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="">
-        <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i>
-</p>
+        <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i></p>
       </div>
       <div class="informationPart">
         <h3>Elodie Uricoechea </h3>
@@ -41,6 +15,23 @@
         </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+  </div> -->
+
+  <div class="user-profile-container" ng-controller='profileCtrl'>
+      <div class="user-profile">
+        <div class="top-part" >
+          <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="">
+          <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i></p>
+        </div>
+        <div class="informationPart">
+          <h3>Elodie Uricoechea </h3>
+          <p>Administrateur CIO exceptionnel</p>
+          <p>elo.urico@ladanse.fr</p>
+          <div class="infopart-bot">
+            <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
