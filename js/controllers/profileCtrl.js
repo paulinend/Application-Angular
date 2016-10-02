@@ -9,18 +9,3 @@ myApp.controller('profileCtrl', function($scope,$http){
 
 
 });
-
-
-// // Récupération de l'id dans l'URL du simplonien sélectionné.
-//     var id = $routeParams.id_profil;
-//
-// // Récupération des infos du simplonien sélectionné.
-//     $http.get(serviceApi.profilUser + id)
-//         .then(
-//             function(response) {
-//                 $scope.student = response.data;
-//             },
-//             function(err) {
-//                 console.log("Error");
-//             }
-//         );
