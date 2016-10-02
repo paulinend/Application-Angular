@@ -11,12 +11,14 @@
   flex-direction: column;
 }
 .main-container h1 {
+  font-family: 'Crete Round', serif;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
   font-size: 3em;
 }
 .main-container h3 {
+  font-family: 'Crete Round', serif;
   margin-top: 0;
   margin-bottom: 60px;
   text-align: center;

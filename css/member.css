@@ -14,11 +14,18 @@
   position: relative;
 
 }
+.search-results-container h1 {
+  font-family: 'Crete Round', serif;
+  letter-spacing: 5px;
+  margin-top: 70px;
+}
 .search-results {
   margin-top: 120px;
 }
 .search-box {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 .search-box input {
   outline:none;
@@ -31,18 +38,17 @@
 }
 
 .button {
-	padding:17px 40px;
 	border-radius:3px;
 	outline-style: none;
 	border:none;
-	background-color:rgba(253,92,99,0.8);
 	margin-top: 10px;
-  margin-left: -8px;
-  font-weight: bold;
+  margin-left: 5px;
   color: rgba(0, 0, 0, 0.7);
 }
 
-
+.button i {
+  color: rgba(253,92,99,0.8);
+}
 
 
 
@@ -70,7 +76,7 @@
         min-width: 250px;
         max-width: 600px;
         width: 15%;
-        height: 400px;
+        height: 420px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.137255) 0px 2px 2px 0px, rgba(0, 0, 0, 0.117647) 0px 3px 1px -2px;
         display: flex;
         flex-direction: column;
@@ -85,6 +91,9 @@
         text-transform: capitalize;
 }
 
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .topCard {
 
      margin-top: 30px;
@@ -118,9 +127,13 @@
     img {
         height: 100%;
         width: auto;
-    }
+}
 
 p {
       padding: 4px;
       margin: 0;
+}
+
+.hashtags {
+  word-spacing: 15px;
 }

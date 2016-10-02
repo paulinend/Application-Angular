@@ -1,16 +1,16 @@
 
   <div class="main-member" ng-controller='memberCtrl'>
     <div class="search-results-container">
-      <h1 style="letter-spacing:5px; margin-top:70px">Trouver un membre de la communauté</h1>
+      <h1>Trouver un membre de la communauté</h1>
       <form class="search-box">
-        <input type="text" ng-model="searchText" placeholder="Nom, Ville, secteur..." class="searching"/>
-        <input type="submit" value="Search" class="button"/>
+        <div class="button"><i class="fa fa-search fa-2x" aria-hidden="true"></i></div>
+        <input type="text" ng-model="searchText" placeholder="Nom, Ville, Secteur..." class="searching"/>
       </form>
     </div>
     <section class="search-results">
       <div class="cardPage">
-          <a class="card" href="#/profile" ng-repeat="user in myData  | filter:searchText" >
-              <div class="topCard">
+        <a class="card" href="#/profile/{{user.first_name}}/{{ user.last_name}}" ng-repeat="user in myData  | filter:searchText" >
+                <div class="topCard">
                 <div class="memberPic" >
                   <img src="{{user.picture_url_large}}" alt=""/>
                 </div>
@@ -19,7 +19,7 @@
                   <p> {{user.title}} </p>
               </div>
               <div class="botCard">
-                  <p>{{user.key_skills_hashtags}}</p>
+                  <p class="hashtags">{{user.key_skills_hashtags}}</p>
               </div>
           </a>
       </div>

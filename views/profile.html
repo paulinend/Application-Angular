@@ -4,18 +4,28 @@
 <div class="user-profile-container" ng-controller='profileCtrl'>
     <div class="user-profile">
       <div class="top-part">
-        <img src="{{user.picture_url_large}}" alt=""/>
-        <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i></p>
+        <div class="left-part">
+          <div class="profile-pic">
+            <img src="{{user.picture_url_large}}" alt="">
+            <div class="cadre"></div>
+          </div>
+          <p class="name"><span>{{user.first_name}} {{user.last_name}}</span></p>
+          <p>@{{user.username}}</p>
+          <p>{{user.email}}</p>
+          <p><strong>Adresse:</strong> {{user.street}}, {{user.postcode}}, {{user.city}} <br> {{user.country}}</p>
+          <div class="infopart-bot">
+           <a href="{{user.twitter}}"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+           <a href="{{user.facebook}}"><i class="fa fa-facebook " aria-hidden="true"></i></a>
+           <a href="{{user.linkedin}}"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="right-part">
+          <p><strong>Passion:</strong> {{user.passion}}</p>
+          <br>
+          <p><strong>La communauté:</strong> {{user.community_presentation}}</p>
+          <br>
+        </div>
       </div>
-      <div class="informationPart">
-        <h3>{{user.last_name}} </h3>
-        <p>Administrateur CIO exceptionnel</p>
-        <p>elo.urico@ladanse.fr</p>
-        <!-- <div class="infopart-bot">
-          <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-          <a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        </div> -->
+
       </div>
-    </div>
   </div>

@@ -10,10 +10,12 @@ myApp.config(function($routeProvider) {
     templateUrl: 'views/member.html',
     controller : "memberCtrl"
   })
-  .when('/profile', {
-    templateUrl: 'views/profile.html',
-    controller : 'profileCtrl'
-  });
+
+.when('/profile/:firstName/:lastName', {
+   templateUrl: 'views/profile.html',
+   controller : 'profileCtrl'
+ });
+
 });
     // create the controller and inject Angular's $scope
 myApp.controller('mainController', function($scope) {
