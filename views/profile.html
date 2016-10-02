@@ -9,10 +9,10 @@
             <img src="{{user.picture_url_large}}" alt="">
             <div class="cadre"></div>
           </div>
-          <p class="name"><span>{{user.first_name}} {{user.last_name}}</span></p>
+          <p class="name">{{user.first_name}} {{user.last_name}}</p>
           <p>@{{user.username}}</p>
           <p>{{user.email}}</p>
-          <p><strong>Adresse:</strong> {{user.street}}, {{user.postcode}}, {{user.city}} <br> {{user.country}}</p>
+          <p><span>Adresse:</span> {{user.street}}, {{user.postcode}}, {{user.city}} <br> {{user.country}}</p>
           <div class="infopart-bot">
            <a href="{{user.twitter}}"><i class="fa fa-twitter " aria-hidden="true"></i></a>
            <a href="{{user.facebook}}"><i class="fa fa-facebook " aria-hidden="true"></i></a>
@@ -20,9 +20,9 @@
           </div>
         </div>
         <div class="right-part">
-          <p><strong>Passion:</strong> {{user.passion}}</p>
+          <p><span>Passions:</span> {{user.passion}}</p>
           <br>
-          <p><strong>La communauté:</strong> {{user.community_presentation}}</p>
+          <p><span>La communauté:</span> {{user.community_presentation}}</p>
           <br>
         </div>
       </div>
