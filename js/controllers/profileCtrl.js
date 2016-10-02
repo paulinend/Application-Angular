@@ -1,10 +1,26 @@
 myApp.controller('profileCtrl', function($scope,$http){
   $http.get('data.json').then(function(response){
-      $scope.data = response.data;
+      $scope.myData = response.data.users;
     },
       function(err) {
         console.log("Error");
     })
-    $scope.pageTitle ="FUUUUCK";
-    $scope.message = 'Everyone come and see how good I look!';
+
+
+
 });
+
+
+// // Récupération de l'id dans l'URL du simplonien sélectionné.
+//     var id = $routeParams.id_profil;
+//
+// // Récupération des infos du simplonien sélectionné.
+//     $http.get(serviceApi.profilUser + id)
+//         .then(
+//             function(response) {
+//                 $scope.student = response.data;
+//             },
+//             function(err) {
+//                 console.log("Error");
+//             }
+//         );

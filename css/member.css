@@ -12,6 +12,10 @@
   color: #7A7A7A;
   letter-spacing: 2px;
   position: relative;
+
+}
+.search-results {
+  margin-top: 120px;
 }
 .search-box {
   margin-top: 20px;
@@ -20,7 +24,7 @@
   outline:none;
 	border:none;
 }
-.search {
+.searching {
   padding:17px 170px;
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -48,7 +52,7 @@
 
 .member-list {
   overflow: hidden;
-  margin-top: 20px;
+  margin: 40px;
 }
 
 
@@ -78,6 +82,7 @@
         cursor: pointer;
         transition: 0.1s all;
         margin-bottom: 40px;
+        text-transform: capitalize;
 }
 
 .topCard {
@@ -91,10 +96,7 @@
 }
 
 .botCard {
-      background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 65%, rgba(240,47,23,1) 83%, rgba(240,47,23,1) 100%);
-      background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 65%, rgba(240,47,23,1) 83%, rgba(240,47,23,1) 100%);
-      background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 36%, rgba(246,41,12,1) 65%, rgba(240,47,23,1) 83%, rgba(240,47,23,1) 100%);
-      border-top: 1px solid #40475A;
+      background-color: rgba(253,92,99,0.8);
       color: #fff;
       width: 100%;
       height: 75px;

@@ -1,37 +1,21 @@
-<!-- <div class="user-profile-container" ng-controller='profileCtrl'>
+
+
+
+<div class="user-profile-container" ng-controller='profileCtrl'>
     <div class="user-profile">
-      <div class="top-part" ng-style="{'background-image':'url(./assets/images/'+student.photo+')'}">
-        <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="">
+      <div class="top-part">
+        <img src="{{user.picture_url_large}}" alt=""/>
         <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i></p>
       </div>
       <div class="informationPart">
-        <h3>Elodie Uricoechea </h3>
+        <h3>{{user.last_name}} </h3>
         <p>Administrateur CIO exceptionnel</p>
         <p>elo.urico@ladanse.fr</p>
-        <div class="infopart-bot">
+        <!-- <div class="infopart-bot">
           <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
           <a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-        </div>
+        </div> -->
       </div>
     </div>
-  </div> -->
-
-  <div class="user-profile-container" ng-controller='profileCtrl'>
-      <div class="user-profile">
-        <div class="top-part" >
-          <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="">
-          <p class="follow"><i class="fa fa-plus" aria-hidden="true"></i></p>
-        </div>
-        <div class="informationPart">
-          <h3>Elodie Uricoechea </h3>
-          <p>Administrateur CIO exceptionnel</p>
-          <p>elo.urico@ladanse.fr</p>
-          <div class="infopart-bot">
-            <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>

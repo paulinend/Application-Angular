@@ -1,37 +1,22 @@
 
   <div class="main-member" ng-controller='memberCtrl'>
-    <div class="search-results-container" ng-controller="memberCtrl">
-      <h1 style="letter-spacing:5px">Trouver un membre de la communauté</h1>
-      <div class="search-box">
-        <input type="text" name="name" ng-model="searchMember " autocomplete="off"  class="search">
-        <input type="submit" value="Search" class="button">
-      </div>
+    <div class="search-results-container">
+      <h1 style="letter-spacing:5px; margin-top:70px">Trouver un membre de la communauté</h1>
+      <form class="search-box">
+        <input type="text" ng-model="searchText" placeholder="Nom, Ville, secteur..." class="searching"/>
+        <input type="submit" value="Search" class="button"/>
+      </form>
     </div>
-    <!-- <section class="search-results">
-      <div class="cardPage">
-          <a class="card" href="/profile" ng-repeat="student in data | filter:searchStudent:q track by $index">
-              <div class="topCard">
-                <div class="studentPic" ng-style="{'background-image':'url(./assets/images/'+student.photo+')'}"></div>
-                  <h3>{{users.username}}</h3> <p>{{users.gender}}</p>
-                  <p> {{users.city}}</p>
-                  <p>Passion: <strong>{{users.passion}}</strong></p>
-              </div>
-              <div class="botCard">
-                  <p>{{users.key_skills_hashtags}}</p>
-              </div>
-          </a>
-      </div>
-    </section> -->
     <section class="search-results">
       <div class="cardPage">
-          <a class="card" href="#/profile" ng-repeat='user in myData'>
+          <a class="card" href="#/profile" ng-repeat="user in myData  | filter:searchText" >
               <div class="topCard">
                 <div class="memberPic" >
-                  <img src="{{user.picture_url_large}}" alt="">
+                  <img src="{{user.picture_url_large}}" alt=""/>
                 </div>
-                  <h3>{{user.username}}</h3>
-                  <p> {{user.city}}</p>
-                  <p>Position: <strong>{{user.title}}</strong></p>
+                  <h3>{{user.first_name}} {{user.last_name}}</h3>
+                  <p style='margin-bottom:10px'><i>{{user.city}}, {{user.state}}</i></p>
+                  <p> {{user.title}} </p>
               </div>
               <div class="botCard">
                   <p>{{user.key_skills_hashtags}}</p>
